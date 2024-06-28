@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Project Assessment
 
-## Getting Started
+This repository contains the code for my CLADE assessment where I converted a Figma design into a responsive, mobile-friendly app using Next.js and Tailwind CSS.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Figma to App**: Translated the Figma design into a fully functional app using Next.js and Tailwind CSS.
+2. **Responsive Design**: The app is fully responsive and mobile-friendly, ensuring a seamless experience across different devices.
+
+
+## Screenshots
+
+### Original Design Provided
+
+![Original Design](screenshot/design.png)
+
+### Developed Design
+
+![Developed Design](screenshot/developed.png)
+
+### Difference Between Original and Developed Design
+
+![Difference](screenshot/diffchecker.png)
+
+The difference screenshot was generated using [Diffchecker](https://www.diffchecker.com).
+
+## Technologies Used
+
+- **Next.js**: A React framework for server-side rendering and static site generation.
+- **Tailwind CSS**: A utility-first CSS framework for creating custom designs without leaving your HTML.
+
+## Installation and Setup
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/satyam95/clade-assignment.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd your-repo-name
+    ```
+3. Install the dependencies:
+    ```bash
+    npm install
+    ```
+4. Run the development server:
+    ```bash
+    npm run dev
+    ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## License
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
