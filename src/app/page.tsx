@@ -7,38 +7,38 @@ export default function Home() {
   return (
     <main>
       <div className="border border-[#E7E7E7]">
-        <div className="px-[100px]">
-          <div className="flex items-center gap-[72px]">
-            <div className="text-[#DC4A2D] textLg font-semibold h-[65px] flex items-center relative">
+        <div className="px-6 md:px-10 xl:px-[60px] 2xl:px-[100px]">
+          <div className="flex items-center gap-4 md:gap-[72px] overflow-x-auto">
+            <div className="text-[#DC4A2D] min-w-24 textLg font-semibold h-[50px] xl:h-[65px] flex items-center relative">
               Job preview
               <div className="h-0.5 bg-[#DC4A2D] w-[65px] absolute bottom-0 left-0 right-0 mx-auto"></div>
             </div>
-            <div className="suvaGrey textLg font-medium h-[65px] flex items-center">
+            <div className="suvaGrey textLg font-medium h-[50px] xl:h-[65px] flex items-center">
               Applicants
             </div>
-            <div className="suvaGrey textLg font-medium h-[65px] flex items-center">
+            <div className="suvaGrey textLg font-medium h-[50px] xl:h-[65px] flex items-center">
               Match
             </div>
-            <div className="suvaGrey textLg font-medium h-[65px] flex items-center">
+            <div className="suvaGrey textLg font-medium h-[50px] xl:h-[65px] flex items-center">
               Messages
             </div>
           </div>
         </div>
       </div>
-      <div className="flex w-full">
+      <div className="flex flex-col lg:flex-row w-full">
         <div className="grow">
           <div className="border-b border-[#E7E7E7]">
-            <div className="px-[100px] pt-9 pb-8">
+            <div className="px-6 md:px-10 xl:px-[60px] 2xl:px-[100px] pt-9 pb-8">
               <div className="flex flex-col gap-6">
-                <div className="flex items-center gap-3">
+                <div className="flex flex-col xl:flex-row xl:items-center gap-2 xl:gap-3">
                   <h2 className="heading1 font-semibold gray24">
                     Senior Product Designer
                   </h2>
-                  <div className="w-1 h-1 rounded-full bg-[#D1D1D1]"></div>
+                  <div className="hidden xl:block w-1 h-1 rounded-full bg-[#D1D1D1]"></div>
                   <div className="font-medium suvaGrey textS">
                     posted 2 days ago
                   </div>
-                  <div className="py-px pl-1.5 pr-2 border border-[#ABEFC6] rounded-full bg-[#ECFDF3] inline-block">
+                  <div className="py-px pl-1.5 pr-2 border border-[#ABEFC6] rounded-full bg-[#ECFDF3] w-fit xl:inline-block">
                     <div className="flex items-center gap-1.5">
                       <div className="w-2 h-2 rounded-full bg-[#17B26A]"></div>
                       <div className="greenDark textXs font-medium interFont">
@@ -47,8 +47,8 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="flex items-center">
-                  <div className="gap-2 flex items-center min-w-[168px]">
+                <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-0">
+                  <div className="gap-2 flex items-center 2xl:min-w-[168px]">
                     <Image
                       src="/marker.svg"
                       alt="location icon"
@@ -59,8 +59,8 @@ export default function Home() {
                       Delaware, USA
                     </h3>
                   </div>
-                  <div className="w-1 h-1 rounded-full bg-[#D1D1D1] mx-4"></div>
-                  <div className="gap-3 flex items-center min-w-[159px]">
+                  <div className="hidden md:block w-1 h-1 rounded-full bg-[#D1D1D1] mx-4"></div>
+                  <div className="gap-3 flex items-center 2xl:min-w-[159px]">
                     <Image
                       src="/coins-stacked.svg"
                       alt="salary icon"
@@ -76,8 +76,8 @@ export default function Home() {
             </div>
           </div>
           <div className="border-b border-[#E7E7E7]">
-            <div className="px-[100px] py-8">
-              <div className="flex gap-16 items-start">
+            <div className="px-6 md:px-10 xl:px-[60px] 2xl:px-[100px] py-8">
+              <div className="flex gap-6 2xl:gap-16 items-start flex-wrap">
                 <div className="flex flex-col gap-2 min-w-[170px]">
                   <h4 className="font-medium grayDark textS">
                     Skills Required
@@ -116,8 +116,8 @@ export default function Home() {
             </div>
           </div>
           <div className="border-b border-[#E7E7E7]">
-            <div className="px-[100px] py-8">
-              <div className="min-w-[526px]">
+            <div className="px-6 md:px-10 xl:px-[60px] 2xl:px-[100px] py-8">
+              <div className="md:min-w-[526px]">
                 <h4 className="font-medium grayDark textS">About the job</h4>
                 <div className="pt-2 pb-2.5">
                   <ul className="flex flex-col">
@@ -185,7 +185,7 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <div className="px-[100px] pt-8 pb-9">
+            <div className="px-6 md:px-10 xl:px-[60px] 2xl:px-[100px] pt-8 pb-9">
               <div className="flex items-center gap-3 py-2.5">
                 <Image
                   src="/alt.png"
@@ -195,7 +195,7 @@ export default function Home() {
                 />
                 <h3 className="font-medium textLg text-[#4F4F4F]">Atlassian</h3>
               </div>
-              <div className="grid grid-cols-2 pt-4 gap-y-6 gap-x-12 max-w-[736px]">
+              <div className="grid grid-cols-1 md:grid-cols-2 pt-4 gap-y-6 gap-x-12 max-w-[736px]">
                 <StatsCard title="Company size" descp="1k - 2k Employees" />
                 <StatsCard title="Type" descp="Private" />
                 <StatsCard
@@ -212,10 +212,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="min-w-[409px] bg-[#FCFCFC] border-l border-[#E7E7E7]">
-          <div className="pt-[35px] px-6">
+        <div className="lg:max-w-[335px] xl:max-w-[350px] 2xl:min-w-[409px] w-full bg-[#FCFCFC] border-l border-[#E7E7E7]">
+          <div className="pt-[35px] px-6 md:px-16 lg:px-6">
             <div className="flex justify-between items-center">
-              <button className="border-[0.8px] border-[#DC4A2D] bg-[#FEF4F2] rounded-lg flex items-center gap-2.5 py-3 px-8 min-w-[174px]">
+              <button className="border-[0.8px] border-[#DC4A2D] bg-[#FEF4F2] rounded-lg flex items-center justify-center gap-2.5 py-3 2xl:px-8 min-w-[144px] 2xl:min-w-[174px]">
                 <Image
                   src="/trash.svg"
                   alt="trash icon"
@@ -226,7 +226,7 @@ export default function Home() {
                   Delete job
                 </div>
               </button>
-              <button className="border-2 border-[#FED3CA] bg-[#DC4A2D] rounded-lg flex items-center justify-center gap-2.5 py-3 px-8 min-w-[176px]">
+              <button className="border-2 border-[#FED3CA] bg-[#DC4A2D] rounded-lg flex items-center justify-center gap-2.5 py-3 2xl:px-8 min-w-[146px] 2xl:min-w-[176px]">
                 <Image src="/edit.svg" alt="edit icon" height={16} width={16} />
                 <div className="text-white font-medium textBase">Edit job</div>
               </button>
@@ -264,6 +264,7 @@ export default function Home() {
                 space="large"
               />
             </div>
+            <div className="pb-20 md:p-0"></div>
           </div>
         </div>
       </div>

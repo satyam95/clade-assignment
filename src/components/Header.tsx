@@ -3,16 +3,16 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header>
+    <header className="sticky top-0 z-20 bg-white">
       <div className="shadow1">
-        <div className="pt-[17px] pb-[18px] px-6 flex items-center">
-          <div className="ml-4 h-[61px] w-[100px] bg-[#E7E7E7] flex justify-center items-center">
+        <div className="pt-[17px] pb-[18px] px-6 flex items-center justify-between 2xl:justify-normal">
+          <div className="2xl:ml-4 h-[61px] w-[100px] bg-[#E7E7E7] flex justify-center items-center">
             <div className="text-xl font-bold text-[#DC4A2D] satoshiBold">
               Logo
             </div>
           </div>
-          <div className="p-[7px] borderTiny rounded-[36px] flex items-center max-w-[538px] h-[74px] w-full ml-[455px] mr-[437px]">
-            <button className="bg-[#DC4A2D] flex items-center justify-center gap-2 pt-[14px] pb-[13px] px-[13px] rounded-full border-2 border-[#FCB4A5] items-center max-w-[109px] w-full">
+          <div className="fixed w-fit left-1/2 -translate-x-1/2 bottom-4 md:translate-x-0 md:bottom-auto md:left-auto md:relative bg-white z-20 flex p-[4px] 2xl:p-[7px] borderTiny rounded-[36px] items-center max-w-[420px] xl:max-w-[538px] 2xl:h-[74px] md:w-full 2xl:ml-[455px] 2xl:mr-[437px]">
+            <button className="bg-[#DC4A2D] flex items-center justify-center gap-2 pt-[12px] pb-[11px] px-[13px] rounded-full border-2 border-[#FCB4A5] items-center max-w-[109px] w-full">
               <div className="h-6 w-6 flex justify-center items-center">
                 <Image
                   src="/briefcase.svg"
@@ -25,7 +25,7 @@ const Header = () => {
                 Jobs
               </div>
             </button>
-            <button className="flex items-center justify-center gap-2 max-w-[128px] w-full ml-[65px] mr-[80px]">
+            <button className="flex items-center justify-center gap-2 max-w-[128px] w-full mx-2 md:mx-10 xl:ml-[65px] xl:mr-[80px]">
               <div className="h-6 w-6 flex justify-center items-center relative">
                 <Image
                   src="/message.svg"
